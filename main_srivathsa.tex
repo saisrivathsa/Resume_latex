@@ -1,0 +1,258 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[10pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{orange}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage{geometry}
+\geometry{
+	a4paper,
+	left=0.7in,
+	right=0.7in,
+	top=0.32in,
+	bottom=0.32in
+}
+\setlength{\hintscolumnwidth}{1cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{VEMULA}{SAI SRI VATHSA}
+%\title{Resumé}                               % optional, remove / comment the line if not wanted
+%\address{street and number}{postcode city}{country}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\address{Junior Year Student}{Electronics and Communication Engineering}{
+Indian Institute of Technology Roorkee}                 % optional, remove / comment the line if not wanted
+\phone[mobile]{(+91)~750~034~5061}                   % optional, remove / comment the line if not wanted
+%\phone[fixed]{+2~(345)~678~901}                    % optional, remove / comment the line if not wanted
+%\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
+\email{srivathsaeric@gmail.com}                               % optional, remove / comment the line if not wanted
+\homepage{github.com/saisrivathsa}                         % optional, remove / comment the line if not wanted
+%\photo[69pt][0pt]{picture.jpeg}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{INTERESTS}
+\cventry{}{\normalfont{Software Development, Web Development, Software Security}}{}{}{}{}
+
+\section{EDUCATION}
+\cventry{2015-2019}{Bachelor of Technology}{Indian Institute of Technology Roorkee}{}{\newline Majoring in Electronics and Communication Engineering}{\textbf {CGPA : 7.413 on a scale of 10}}  % arguments 3 to 6 can be left empty
+\cventry{2015}{Class 12$^{\textbf{\small th}}$}{Narayana Junior College}{Hyderabad}{{ Percentage: 97.3}}{}
+\cventry{2013}{Class 10$^{\textbf{\small th}}$}{Paramita High School}{Karimnagar}{ GPA : {9.8 on a scale of 10}}{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%% PROJECTS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{PROJECTS}
+
+
+\cventry{February 2017}{Gregary}{Code Fun Do Project}{}{}{
+\begin{itemize}
+\item Developed a web application using Django framework and javascript.
+\item Thiss application helps the users to easily hoist and organise various events in institutions like colleges and offices.
+\item Source code can be found \href{https://github.com/saisrivathsa/Gregary}{\textcolor{blue}{here}}
+\end{itemize}
+}
+
+
+% Monochromator Automation
+\cventry{March 2017}{Sangram'17 Website}{}{}{}{
+\begin{itemize}
+\item Developed a website for Sangram'17, an inter-college sports meet conducted by IIT Roorkee.
+\item The website is developed using Django framework and Javascript.
+\item Website is currently live \href{https://sangramiitr.in}{\textcolor{blue}{here}} 
+\end{itemize}
+}
+
+
+% Monochromator Automation
+\cventry{June 2017}{Music Room}{}{}{}{
+\begin{itemize}
+\item Developed a live music room application for AngelHack Hackathon at Microsoft IDC Hyderabad.
+\item The website is developed using NodeJS and Javascript.
+\item Users can create, join rooms and listen to live streaming music. 
+\item Source code can be found \href{https://github.com/rohithasrk/music-room}{\textcolor{blue}{here}} 
+\end{itemize}
+}
+
+% Monochromator Automation
+\cventry{March 2017}{Assembly Coding in MIPS-32 architecture}{}{}{}{
+\begin{itemize}
+\item Studied MIPS-32 Architecture
+\item Wrote an Assembly Language \href{https://github.com/saisrivathsa/csn-221-assembly-language}{\textcolor{blue}{program}} for a Binary Coded Decimal (BCD) unit for MIPS-32 architecture
+\end{itemize}
+}
+
+% Monochromator Automation
+\cventry{April 2017}{FPGA Based Implementation of an Invisible Robust Image Watermarking Encoder}{}{}{}{
+\begin{itemize}
+\item Implemented key based image watermarking algorithm on Spartan 3E kit.
+\item \href{https://github.com/saisrivathsa/Image_Watermarking_Matlab}{\textcolor{blue}{Matlab}} simulations for the algorithm were also developed.
+\item Project report can be found \href{http://tinyurl.com/yb3xq43g}{\textcolor{blue}{here}} 
+\end{itemize}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%% SKILLS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{SKILLS}
+\begin{minipage}[t]{\doubleitemmaincolumnwidth+\hintscolumnwidth}%
+\cventry[2em]{}{Computer Languages}{}{}{}{
+\parbox{\doubleitemmaincolumnwidth+2em}{
+Python, C++, Java, JavaScript, SQL, Verilog, Assembly (for MIPS)
+}}%
+\end{minipage}%
+\begin{minipage}[t]{\doubleitemmaincolumnwidth+\hintscolumnwidth}%
+\cventry[2em]{}{Spoken Languages}{}{}{}{
+\parbox{\doubleitemmaincolumnwidth+2em}{
+English (\textit{SRW}), Hindi (\textit{SRW}), Telugu (\textit{SRW})
+}}%
+\end{minipage}%
+\\ [.35em]
+\begin{minipage}[1]{\doubleitemmaincolumnwidth+\hintscolumnwidth}%
+\cventry[2em]{}{Software Packages}{}{}{}{
+\parbox{\doubleitemmaincolumnwidth+2em}{
+Django, NodeJS, Git, MATLAB, ISE Design Suite, Xilinx, LT Spice, QTSpim
+\\
+\hfill
+}}%
+\end{minipage}%
+\iffalse
+\begin{minipage}[1]{\doubleitemmaincolumnwidth+\hintscolumnwidth}%
+\cventry[2em]{}{Software Packages}{}{}{}{
+\parbox{\doubleitemmaincolumnwidth+2em}{
+Vivado HLS, Vivado, SDSoC, ISE, MATLAB, {\textrm \LaTeX}
+}}%
+\end{minipage}%
+\hfill
+\fi
+\section{RELEVANT COURSES}
+
+\cventry{}{\normalfont{
+\begin{itemize}
+\item Introduction to Object Oriented Programming
+\item Introduction to Data Structures
+\item Computer Architecture and Microprocessors
+\end{itemize}}
+}{}{}{}{}
+
+\section{EXTRA-CURRICULARS AND AWARDS}
+
+\cventry{}{Sangram'17}{}{}{}{
+\begin{itemize}
+\item Worked as executive web developer at Sangram'17.
+\item Sangram is an inter-college sports meet conducted by IIT Roorkee.
+\end{itemize}
+}
+
+\cventry{}{Associate Mentor at Student Mentorship Program}{}{}{}{
+\begin{itemize}
+\item Worked as an associate mentor in the Student Mentorship Program to guide and mentor freshers at IIT Roorkee in various fields by fostering healthy senior-junior interaction.
+\end{itemize}
+}
+
+\iffalse
+\section{REFERENCES}
+
+\begin{minipage}[b]{\doubleitemmaincolumnwidth+\hintscolumnwidth}%
+\cventry[2em]{}{\href{https://www.ee.iitb.ac.in/wiki/faculty/patkar}{\textcolor{black}{Dr. Sachin Patkar}}}{}{}{}{
+\parbox{\doubleitemmaincolumnwidth+2em}{
+Professor\newline Department of Electrical Engineering\newline IIT Bombay\newline patkar@ee.iitb.ac.in}
+}
+\end{minipage}%
+\begin{minipage}[b]{\doubleitemmaincolumnwidth+\hintscolumnwidth}%
+\cventry[2em]{}{\href{https://www.iitr.ac.in/departments/ECE/pages/People+Faculty+anandfec.html}{\textcolor{black}{Dr. Anand Bulusu}}}{}{}{}{
+\parbox{\doubleitemmaincolumnwidth+2em}{
+Associate Professor\newline Department of Electronics and Communication\newline IIT Roorkee\newline anandfec@iitr.ac.in}
+}
+\end{minipage}
+\fi
+%\section{Interests}
+%\cvitem{hobby 1}{Description}
+%\cvitem{hobby 2}{Description}
+%\cvitem{hobby 3}{Description}
+%
+%\section{Extra 1}
+%\cvlistitem{Item 1}
+%\cvlistitem{Item 2}
+%\cvlistitem{Item 3. This item is particularly long and therefore normally spans over several lines. Did you notice the indentation when the line wraps?}
+%
+%\section{Extra 2}
+%\cvlistdoubleitem{Item 1}{Item 4}
+%\cvlistdoubleitem{Item 2}{Item 5\cite{book1}}
+%\cvlistdoubleitem{Item 3}{Item 6. Like item 3 in the single column list before, this item is particularly long to wrap over several lines.}
+%
+%\section{References}
+%\begin{cvcolumns}
+%  \cvcolumn{Category 1}{\begin{itemize}\item Person 1\item Person 2\item Person 3\end{itemize}}
+%  \cvcolumn{Category 2}{Amongst others:\begin{itemize}\item Person 1, and\item Person 2\end{itemize}(more upon request)}
+%  \cvcolumn[0.5]{All the rest \& some more}{\textit{That} person, and \textbf{those} also (all available upon request).}
+%\end{cvcolumns}
+%
+%% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+%\nocite{*}
+%\bibliographystyle{plain}
+%\bibliography{publications}                        % 'publications' is the name of a BibTeX file
+%
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+%%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+%
+%\clearpage
+%-----       letter       ---------------------------------------------------------
+% recipient data
+%\recipient{Company Recruitment team}{Company, Inc.\\123 somestreet\\some city}
+%\date{January 01, 1984}
+%\opening{Dear Sir or Madam,}
+%\closing{Yours faithfully,}
+%\enclosure[Attached]{curriculum vit\ae{}}          % use an optional argument to use a string other than "Enclosure", or redefine \enclname
+%\makelettertitle
+%
+%Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ullamcorper neque sit amet lectus facilisis sed luctus nisl iaculis. Vivamus at neque arcu, sed tempor quam. Curabitur pharetra tincidunt tincidunt. Morbi volutpat feugiat mauris, quis tempor neque vehicula volutpat. Duis tristique justo vel massa fermentum accumsan. Mauris ante elit, feugiat vestibulum tempor eget, eleifend ac ipsum. Donec scelerisque lobortis ipsum eu vestibulum. Pellentesque vel massa at felis accumsan rhoncus.
+
+%Suspendisse commodo, massa eu congue tincidunt, elit mauris pellentesque orci, cursus tempor odio nisl euismod augue. Aliquam adipiscing nibh ut odio sodales et pulvinar tortor laoreet. Mauris a accumsan ligula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse vulputate sem vehicula ipsum varius nec tempus dui dapibus. Phasellus et est urna, ut auctor erat. Sed tincidunt odio id odio aliquam mattis. Donec sapien nulla, feugiat eget adipiscing sit amet, lacinia ut dolor. Phasellus tincidunt, leo a fringilla consectetur, felis diam aliquam urna, vitae aliquet lectus orci nec velit. Vivamus dapibus varius blandit.
+
+%Duis sit amet magna ante, at sodales diam. Aenean consectetur porta risus et sagittis. Ut interdum, enim varius pellentesque tincidunt, magna libero sodales tortor, ut fermentum nunc metus a ante. Vivamus odio leo, tincidunt eu luctus ut, sollicitudin sit amet metus. Nunc sed orci lectus. Ut sodales magna sed velit volutpat sit amet pulvinar diam venenatis.
+
+%Albert Einstein discovered that $e=mc^2$ in 1905.
+
+%\[ e=\lim_{n \to \infty} \left(1+\frac{1}{n}\right)^n \]
+
+%\makeletterclosing
+%\clearpage\end{CJK*}                              % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
+\end{document}
+
+
+%% end of file `template.tex'.
